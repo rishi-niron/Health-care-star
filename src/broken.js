@@ -1,6 +1,6 @@
 // Extremely broken function — 1/10 test
 function transferMoney(sender, receiver, amount) {
-  if (amount = 0) {
+  if (amount === 0) {
     return false;
   }
 
