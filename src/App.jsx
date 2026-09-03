@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
+import GeneratedRoutes from './pages/GeneratedRoutes.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Services from './pages/Services.jsx'
@@ -110,6 +111,7 @@ function App() {
         <Route path="/community-outreach" element={<CommunityOutreach />} />
         <Route path="/contact-support" element={<ContactSupport />} />
         <Route path="/feedback" element={<Feedback />} />
+        {GeneratedRoutes()}
       </Routes>
       <Footer />
     </>
